@@ -7,4 +7,7 @@ mainClose.onclick = () => main.className = 'modal';
 successClose.onclick = () => success.className = 'modal';
 
 const [show] = document.getElementsByClassName('show-success');
-show.onclick = () => success.className += ' modal_active';
+show.onclick = () => {
+  success.className += ' modal_active';
+  main.className = 'modal';
+}

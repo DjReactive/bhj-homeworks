@@ -4,7 +4,7 @@ const submenu = document.getElementsByClassName('menu_sub');
 for (let i = 0; i < allLinks.length; i++) allLinks[i].onclick = checkLink;
 
 function checkLink () {
-  let element, link = this.closest(`a[href=""]`);
+  let link = this.closest(`a[href=""]`);
   if (link !== null) {
     for (let el, active, i=0; i < submenu.length; i++) {
       el = submenu[i];
